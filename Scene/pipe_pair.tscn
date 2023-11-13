@@ -1,0 +1,57 @@
+[gd_scene load_steps=6 format=3 uid="uid://d3t62bxcdnwj"]
+
+[ext_resource type="Script" path="res://Scene/pipe_pair.gd" id="1_fgbj5"]
+[ext_resource type="Texture2D" uid="uid://bvn26ar31irvq" path="res://Assets/prize.png" id="2_gubtg"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_2uxml"]
+radius = 32.0
+height = 479.0
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_og5rr"]
+radius = 36.0
+height = 448.0
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_1cady"]
+size = Vector2(20, 146)
+
+[node name="PipePair" type="Node2D"]
+script = ExtResource("1_fgbj5")
+
+[node name="TopPipe" type="Area2D" parent="."]
+position = Vector2(0, -300)
+rotation = -3.14159
+
+[node name="TopPipeSrpite" type="Sprite2D" parent="TopPipe"]
+position = Vector2(8.58307e-06, -7.93701)
+scale = Vector2(0.288844, 1.03175)
+texture = ExtResource("2_gubtg")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="TopPipe"]
+position = Vector2(-1, -1.5)
+shape = SubResource("CapsuleShape2D_2uxml")
+
+[node name="BottomPipe" type="Area2D" parent="."]
+
+[node name="BottomPipeSprite" type="Sprite2D" parent="BottomPipe"]
+position = Vector2(9, 280.5)
+scale = Vector2(0.31, 0.974)
+texture = ExtResource("2_gubtg")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="BottomPipe"]
+position = Vector2(7, 285)
+shape = SubResource("CapsuleShape2D_og5rr")
+
+[node name="VisibleOnScreenNotifier2D" type="VisibleOnScreenNotifier2D" parent="."]
+position = Vector2(45, 0)
+
+[node name="Scored" type="Area2D" parent="."]
+position = Vector2(45, 0)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Scored"]
+position = Vector2(0, 5)
+shape = SubResource("RectangleShape2D_1cady")
+
+[connection signal="body_entered" from="TopPipe" to="." method="_on_body_entered"]
+[connection signal="body_entered" from="BottomPipe" to="." method="_on_body_entered"]
+[connection signal="screen_exited" from="VisibleOnScreenNotifier2D" to="." method="_on_visible_on_screen_notifier_2d_screen_exited"]
+[connection signal="body_entered" from="Scored" to="." method="_on_scored_body_entered"]

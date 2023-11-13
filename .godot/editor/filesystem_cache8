@@ -1,0 +1,37 @@
+ea4bc82a6ad023ab7ee23ee620429895
+::res://::1699892006
+icon.svg::CompressedTexture2D::1536981668866980707::1699634081::1699634081::1::::<><>::
+::res://Assets/::1699892485
+background-day.png::CompressedTexture2D::3942734267531118295::1699634081::1699634081::1::::<><>::
+base2.png::CompressedTexture2D::8187603620563779804::1699636425::1699636426::1::::<><>::
+base.png::CompressedTexture2D::5094584510223029896::1699634081::1699634081::1::::<><>::
+birb.png::CompressedTexture2D::2806301346556847331::1699635239::1699635239::1::::<><>::
+Da-Winner (3) (1) (1).jpg::CompressedTexture2D::5154062949788961934::1699892195::1699892196::1::::<><>::
+gameover.png::CompressedTexture2D::1671720145823035019::1699634081::1699634081::1::::<><>::
+mcgarrah2.png::CompressedTexture2D::7175585680516949475::1699635977::1699636000::1::::<><>::
+mcgarrah3.png::CompressedTexture2D::7143336350505439200::1699636062::1699636082::1::::<><>::
+mcgarrah.png::CompressedTexture2D::3426207803640679474::1699635774::1699635784::1::::<><>::
+Parental_Advisory_label.svg.png::CompressedTexture2D::2038752026753656080::1699892485::1699892486::1::::<><>::
+pipe-green.png::CompressedTexture2D::8401577441080676234::1699634081::1699634081::1::::<><>::
+prize.png::CompressedTexture2D::3888918056879251006::1699891998::1699892006::1::::<><>::
+thongs.png::CompressedTexture2D::9040379062723896020::1699891906::1699891906::1::::<><>::
+yellowbird-downflap.png::CompressedTexture2D::4010217747903562561::1699634081::1699634081::1::::<><>::
+yellowbird-midflap.png::CompressedTexture2D::89615364791146658::1699634081::1699634081::1::::<><>::
+yellowbird-upflap.png::CompressedTexture2D::5149734033871980663::1699634081::1699634081::1::::<><>::
+::res://Assets/font/::1699635233
+FlappyBird.ttf::FontFile::6237163555881918360::1699634081::1699634081::1::::<><>::
+::res://Scene/::1699892448
+bird.tscn::PackedScene::8510061073827646561::1699892448::0::1::::<><>::res://Scripts/bird.gd<>uid://bf8nmxnfhs884::::res://Assets/birb.png
+fade.gd::GDScript::-1::1699634908::0::1::::Fade<>Node<>::
+fade.tscn::PackedScene::1995713811561026501::1699892448::0::1::::<><>::res://Scene/fade.gd
+GameManager.gd::GDScript::-1::1699634908::0::1::::<>Node<>::
+ground.tscn::PackedScene::5050244133043156484::1699892448::0::1::::<><>::res://Scripts/ground.gd<>uid://dowevusbasmlg::::res://Assets/base2.png
+main.tscn::PackedScene::3752567388112794937::1699892448::0::1::::<><>::uid://dtilpyyc3gkh2::::res://Scene/bird.tscn<>res://Scene/GameManager.gd<>uid://cfowwtkvcmfgo::::res://Assets/Da-Winner (3) (1) (1).jpg<>uid://cd7m1vf4tvbf5::::res://Scene/ground.tscn<>res://Scripts/pipe_spawner.gd<>uid://3o0d528vtdwf::::res://Scene/fade.tscn<>uid://dtsfutbumtxem::::res://Scene/UI.tscn
+pipe_pair.gd::GDScript::-1::1699634908::0::1::::PipePair<>Node2D<>::
+pipe_pair.tscn::PackedScene::269579511224464897::1699892448::0::1::::<><>::res://Scene/pipe_pair.gd<>uid://bvn26ar31irvq::::res://Assets/prize.png
+UI.gd::GDScript::-1::1699634909::0::1::::UI<>CanvasLayer<>::
+UI.tscn::PackedScene::8530349181030899848::1699892448::0::1::::<><>::uid://cu4lf4od2owng::::res://Assets/font/FlappyBird.ttf<>res://Scene/UI.gd<>uid://c81jyageosmjo::::res://Assets/mcgarrah3.png
+::res://Scripts/::1699635412
+bird.gd::GDScript::-1::1699635412::0::1::::Bird<>CharacterBody2D<>::
+ground.gd::GDScript::-1::1699634908::0::1::::Ground<>Node2D<>::
+pipe_spawner.gd::GDScript::-1::1699634908::0::1::::PipeSpawner<>Node<>::
